@@ -9,11 +9,11 @@ echo "Start Builder Script"
 #                      --buildkitd-flags '--allow-insecure-entitlement security.insecure'
 # docker buildx use insecure-builder
 # docker buildx build --allow security.insecure ...(other build args)...
+# docker buildx build --allow security.insecure --file Dockerfile --output out .
 # docker buildx rm insecure-builder
 
-
-
 DOCKER_BUILDKIT=1 docker build --file Dockerfile --output out .
+
 # docker build --file Dockerfile --output out .
 
 # BUILDERNAME=debian-builder
