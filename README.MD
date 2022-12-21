@@ -21,3 +21,15 @@ Diagram of configurations
 
 ## Files added to /config/includes.chroot.... is added to /
 ## Files added to /config/includes.chroot/etc/skel .... is added to home/user/
+
+
+debootstrap to move stable to /stable-chroot in live fs
+from http://deb.debian.org/debian
+
+chroot to stable-chroot
+
+## make dev to make default set of static device fiels
+# apt install makedev
+# mount none /proc -t proc
+# cd /dev
+# MAKEDEV generic
